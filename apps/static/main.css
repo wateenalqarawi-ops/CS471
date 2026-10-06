@@ -1,0 +1,72 @@
+﻿/* تنسيق عام للروابط ليظهر كـ Block وموسط ومزود بـ Padding */
+.link-box {
+    display: block;
+    text-align: center;
+    padding: 15px;
+    text-decoration: underline;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+/* الرابط الأول */
+#link1 {
+    background-color: #a8f0c1; /* خلفية خضراء فاتحة */
+    color: red;
+}
+
+/* الرابط الثاني */
+#link2 {
+    background-color: #555555; /* خلفية رمادية */
+    color: yellow;
+}
+
+/* الرابط الثالث */
+#link3 {
+    background-color: #000000; /* خلفية سوداء */
+    color: white;
+}
+
+/* حالات الروابط (States) حسب المطلوب */
+a:hover {
+    opacity: 0.8; /* تغيير الشفافية عند مرور الماوس */
+}
+
+a:active {
+    font-weight: bold; /* تكبير الخط عند الضغط */
+}
+
+/* تنسيق العنوان الرئيسي لـ Task 2 */
+.format-header {
+    background-color: #f5f5dc; /* خلفية بيج فاتحة */
+    color: #2e7d32; /* لون أخضر غامق */
+    padding: 10px;
+    font-family: serif;
+}
+
+
+/* تنسيق العنوان الرئيسي لـ Task 3 */
+.list-header {
+    background-color: #5b9aa0; /* خلفية أزرق مائل للخضرة/رمادي */
+    color: white; /* لون الخط أبيض */
+    padding: 10px;
+    font-family: serif;
+}
+
+/* تنسيقات الجداول الخاصة بـ Task 4 */
+.custom-table {
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+    .custom-table th,
+    .custom-table td {
+        border: 1px solid black;
+        padding: 6px 12px;
+        text-align: center;
+    }
+
+.table-caption {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
