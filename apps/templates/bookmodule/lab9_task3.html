@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<h2>Oldest Book by Publisher</h2>
+<table border="1">
+    <tr>
+        <th>Publisher</th>
+        <th>Oldest Book Publish Date</th>
+    </tr>
+    {% for pub in publishers %}
+    <tr>
+        <td>{{ pub.name }}</td>
+        <td>{{ pub.oldest_book|default:"N/A" }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content %}

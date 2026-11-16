@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<h2>Filtered Books Count by Publisher</h2>
+<table border="1">
+    <tr>
+        <th>Publisher</th>
+        <th>Filtered Books Count</th>
+    </tr>
+    {% for pub in publishers %}
+    <tr>
+        <td>{{ pub.name }}</td>
+        <td>{{ pub.filtered_books_count }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content %}

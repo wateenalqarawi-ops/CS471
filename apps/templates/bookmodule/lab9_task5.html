@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<h2>Publishers with Highly Rated Books</h2>
+<table border="1">
+    <tr>
+        <th>Publisher</th>
+        <th>Highly Rated Books Count</th>
+    </tr>
+    {% for pub in publishers %}
+    <tr>
+        <td>{{ pub.name }}</td>
+        <td>{{ pub.high_rated_count }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock content %}
